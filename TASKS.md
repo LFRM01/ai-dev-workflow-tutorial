@@ -1,0 +1,63 @@
+# Tasks
+
+This file tracks all work for the e-commerce analytics dashboard, from initial setup through deployment.
+
+## Definition of Done
+
+A milestone can move to Done only when:
+
+- All of its acceptance criteria are met
+- The app runs locally with `streamlit run app.py` without errors
+- Changes are committed with the milestone ID (e.g. `TASK-1`) in the commit message
+
+## To Do
+
+### TASK-1: Environment setup and project initialization
+- [ ] Project structure created (app.py, requirements.txt, data/ folder)
+- [ ] Dependencies (streamlit, pandas, plotly) installed and pinned in requirements.txt
+- [ ] `streamlit run app.py` launches a blank/placeholder app with no errors
+
+Commit:
+
+### TASK-2: Data loading and basic structure
+- [ ] sales-data.csv loads into a Pandas DataFrame with correct dtypes (date, numeric, categorical)
+- [ ] Basic page layout/title in place
+
+Commit:
+
+### TASK-3: KPI cards implementation
+- [ ] Total Sales displayed, formatted as currency ($X,XXX,XXX)
+- [ ] Total Orders displayed, formatted with number separators
+- [ ] Values match expected output (~$116,500 total sales, 482 orders)
+
+Commit:
+
+### TASK-4: Sales trend chart
+- [ ] Line chart shows sales over time (daily or monthly granularity)
+- [ ] Chart includes interactive tooltips showing exact values
+
+Commit:
+
+### TASK-5: Category and region breakdowns
+- [ ] Bar chart shows sales by category, sorted highest to lowest, all categories shown
+- [ ] Bar chart shows sales by region, sorted highest to lowest, all regions shown
+- [ ] Both charts include interactive tooltips with exact values
+
+Commit:
+
+### TASK-6: Testing and refinement
+- [ ] Dashboard runs end-to-end with no errors or warnings
+- [ ] All values verified against expected calculations from the CSV
+- [ ] Layout and labels reviewed for a professional, executive-ready appearance
+
+Commit:
+
+### TASK-7: Deployment to Streamlit Community Cloud
+- [ ] App deployed and reachable via a public Streamlit Community Cloud URL
+- [ ] Deployed app matches local behavior (KPIs, charts, no errors)
+
+Commit:
+
+## In Progress
+
+## Done
