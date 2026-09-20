@@ -53,11 +53,13 @@ Commit:
 
 ## In Progress
 
-### TASK-1: Environment setup and project initialization
-- [ ] Project structure created (app.py, requirements.txt, data/ folder)
-- [ ] Dependencies (streamlit, pandas, plotly) installed and pinned in requirements.txt
-- [ ] `streamlit run app.py` launches a blank/placeholder app with no errors
-
-Commit:
-
 ## Done
+
+### TASK-1: Environment setup and project initialization
+- [x] Project structure created (app.py, requirements.txt, data/ folder)
+- [x] Dependencies (streamlit, pandas, plotly) installed and pinned in requirements.txt
+- [x] `streamlit run app.py` launches a blank/placeholder app with no errors
+
+Commit: 959edd7
+
+Notes: Claude briefly overwrote the repo's existing, more thorough `.gitignore` with a minimal 3-line version while scaffolding this task; caught via `git diff` and reverted before anything was committed, so no bad state landed. Also needed `streamlit run app.py --server.headless true` to avoid the first-run "onboarding email" prompt blocking non-interactive/background runs.
