@@ -1,7 +1,14 @@
 import pandas as pd
 import pytest
 
-from data import load_sales_data, monthly_sales_trend, total_orders, total_sales
+from data import (
+    load_sales_data,
+    monthly_sales_trend,
+    sales_by_category,
+    sales_by_region,
+    total_orders,
+    total_sales,
+)
 
 
 def test_load_sales_data_returns_dataframe_with_parsed_dates(tmp_path):
@@ -51,3 +58,17 @@ def test_monthly_sales_trend(sample_sales_df):
     assert trend.iloc[0] == pytest.approx(234.95)
     assert trend.iloc[1] == pytest.approx(364.94)
     assert trend.iloc[2] == pytest.approx(149.99)
+
+
+def test_sales_by_category_sorted_descending(sample_sales_df):
+    result = sales_by_category(sample_sales_df)
+
+    assert list(result.index) == ["Audio", "Wearables", "Accessories"]
+    assert result.iloc[0] == pytest.approx(309.97)
+
+
+def test_sales_by_region_sorted_descending(sample_sales_df):
+    result = sales_by_region(sample_sales_df)
+
+    assert list(result.index) == ["North", "East", "South", "West"]
+    assert result.iloc[0] == pytest.approx(309.97)
