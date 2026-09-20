@@ -12,13 +12,6 @@ A milestone can move to Done only when:
 
 ## To Do
 
-### TASK-1: Environment setup and project initialization
-- [ ] Project structure created (app.py, requirements.txt, data/ folder)
-- [ ] Dependencies (streamlit, pandas, plotly) installed and pinned in requirements.txt
-- [ ] `streamlit run app.py` launches a blank/placeholder app with no errors
-
-Commit:
-
 ### TASK-2: Data loading and basic structure
 - [ ] sales-data.csv loads into a Pandas DataFrame with correct dtypes (date, numeric, categorical)
 - [ ] Basic page layout/title in place
@@ -59,5 +52,12 @@ Commit:
 Commit:
 
 ## In Progress
+
+### TASK-1: Environment setup and project initialization
+- [ ] Project structure created (app.py, requirements.txt, data/ folder)
+- [ ] Dependencies (streamlit, pandas, plotly) installed and pinned in requirements.txt
+- [ ] `streamlit run app.py` launches a blank/placeholder app with no errors
+
+Commit:
 
 ## Done
