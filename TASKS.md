@@ -12,13 +12,6 @@ A milestone can move to Done only when:
 
 ## To Do
 
-### TASK-3: KPI cards implementation
-- [ ] Total Sales displayed, formatted as currency ($X,XXX,XXX)
-- [ ] Total Orders displayed, formatted with number separators
-- [ ] Values match expected output (~$116,500 total sales, 482 orders)
-
-Commit:
-
 ### TASK-4: Sales trend chart
 - [ ] Line chart shows sales over time (daily or monthly granularity)
 - [ ] Chart includes interactive tooltips showing exact values
@@ -48,6 +41,13 @@ Commit:
 ## In Progress
 
 ## Done
+
+### TASK-3: KPI cards implementation
+- [x] Total Sales displayed, formatted as currency ($X,XXX,XXX)
+- [x] Total Orders displayed, formatted with number separators
+- [x] Values match expected output (~$116,500 total sales, 482 orders)
+
+Commit: 50562be
 
 ### TASK-2: Data loading and basic structure
 - [x] sales-data.csv loads into a Pandas DataFrame with correct dtypes (date, numeric, categorical)
