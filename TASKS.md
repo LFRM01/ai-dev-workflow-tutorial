@@ -12,13 +12,6 @@ A milestone can move to Done only when:
 
 ## To Do
 
-### TASK-5: Category and region breakdowns
-- [ ] Bar chart shows sales by category, sorted highest to lowest, all categories shown
-- [ ] Bar chart shows sales by region, sorted highest to lowest, all regions shown
-- [ ] Both charts include interactive tooltips with exact values
-
-Commit:
-
 ### TASK-6: Testing and refinement
 - [ ] Dashboard runs end-to-end with no errors or warnings
 - [ ] All values verified against expected calculations from the CSV
@@ -35,6 +28,15 @@ Commit:
 ## In Progress
 
 ## Done
+
+### TASK-5: Category and region breakdowns
+- [x] Bar chart shows sales by category, sorted highest to lowest, all categories shown
+- [x] Bar chart shows sales by region, sorted highest to lowest, all regions shown
+- [x] Both charts include interactive tooltips with exact values
+
+Commit: 5f4e88a
+
+Notes: Clean — implementation matched the plan exactly, no corrections needed.
 
 ### TASK-4: Sales trend chart
 - [x] Line chart shows sales over time (daily or monthly granularity)
