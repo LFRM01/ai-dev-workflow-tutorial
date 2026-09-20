@@ -21,6 +21,8 @@ except (FileNotFoundError, ValueError) as e:
     st.error(f"Could not load sales data: {e}")
     st.stop()
 
+st.caption(f"Data from {df['date'].min():%B %Y} to {df['date'].max():%B %Y}")
+
 col1, col2 = st.columns(2)
 col1.metric("Total Sales", f"${total_sales(df):,.0f}")
 col2.metric("Total Orders", f"{total_orders(df):,}")
