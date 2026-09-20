@@ -1,7 +1,7 @@
 import pandas as pd
 import pytest
 
-from data import load_sales_data
+from data import load_sales_data, total_orders, total_sales
 
 
 def test_load_sales_data_returns_dataframe_with_parsed_dates(tmp_path):
@@ -34,3 +34,11 @@ def test_load_sales_data_raises_for_missing_required_column(tmp_path):
 
     with pytest.raises(ValueError):
         load_sales_data(str(csv_path))
+
+
+def test_total_sales(sample_sales_df):
+    assert total_sales(sample_sales_df) == pytest.approx(749.88)
+
+
+def test_total_orders(sample_sales_df):
+    assert total_orders(sample_sales_df) == 5
