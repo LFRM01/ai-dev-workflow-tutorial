@@ -1,7 +1,7 @@
 import pandas as pd
 import pytest
 
-from data import load_sales_data, total_orders, total_sales
+from data import load_sales_data, monthly_sales_trend, total_orders, total_sales
 
 
 def test_load_sales_data_returns_dataframe_with_parsed_dates(tmp_path):
@@ -42,3 +42,12 @@ def test_total_sales(sample_sales_df):
 
 def test_total_orders(sample_sales_df):
     assert total_orders(sample_sales_df) == 5
+
+
+def test_monthly_sales_trend(sample_sales_df):
+    trend = monthly_sales_trend(sample_sales_df)
+
+    assert list(trend.index.strftime("%Y-%m")) == ["2024-01", "2024-02", "2024-03"]
+    assert trend.iloc[0] == pytest.approx(234.95)
+    assert trend.iloc[1] == pytest.approx(364.94)
+    assert trend.iloc[2] == pytest.approx(149.99)

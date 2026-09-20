@@ -28,3 +28,9 @@ def total_sales(df):
 
 def total_orders(df):
     return len(df)
+
+
+def monthly_sales_trend(df):
+    monthly = df.groupby(df["date"].dt.to_period("M"))["total_amount"].sum()
+    monthly.index = monthly.index.to_timestamp()
+    return monthly.sort_index()
