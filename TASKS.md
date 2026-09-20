@@ -12,12 +12,6 @@ A milestone can move to Done only when:
 
 ## To Do
 
-### TASK-4: Sales trend chart
-- [ ] Line chart shows sales over time (daily or monthly granularity)
-- [ ] Chart includes interactive tooltips showing exact values
-
-Commit:
-
 ### TASK-5: Category and region breakdowns
 - [ ] Bar chart shows sales by category, sorted highest to lowest, all categories shown
 - [ ] Bar chart shows sales by region, sorted highest to lowest, all regions shown
@@ -41,6 +35,14 @@ Commit:
 ## In Progress
 
 ## Done
+
+### TASK-4: Sales trend chart
+- [x] Line chart shows sales over time (daily or monthly granularity)
+- [x] Chart includes interactive tooltips showing exact values
+
+Commit: b13d4f4
+
+Notes: Clean — implementation matched the plan exactly, no corrections needed.
 
 ### TASK-3: KPI cards implementation
 - [x] Total Sales displayed, formatted as currency ($X,XXX,XXX)
