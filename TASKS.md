@@ -12,13 +12,6 @@ A milestone can move to Done only when:
 
 ## To Do
 
-### TASK-6: Testing and refinement
-- [ ] Dashboard runs end-to-end with no errors or warnings
-- [ ] All values verified against expected calculations from the CSV
-- [ ] Layout and labels reviewed for a professional, executive-ready appearance
-
-Commit:
-
 ### TASK-7: Deployment to Streamlit Community Cloud
 - [ ] App deployed and reachable via a public Streamlit Community Cloud URL
 - [ ] Deployed app matches local behavior (KPIs, charts, no errors)
@@ -28,6 +21,15 @@ Commit:
 ## In Progress
 
 ## Done
+
+### TASK-6: Testing and refinement
+- [x] Dashboard runs end-to-end with no errors or warnings
+- [x] All values verified against expected calculations from the CSV
+- [x] Layout and labels reviewed for a professional, executive-ready appearance
+
+Commit: c9bb85b
+
+Notes: Full pytest suite (8 tests) passed with no warnings before and after the change. Verified computed values directly against the PRD's expected output: Total Sales $116,500.21, Total Orders 482, top category Electronics, all four regions present. The plan's caption snippet showed it going directly under `st.title(...)`, but `df` isn't loaded until after the try/except block, so it was placed right after that instead — placing it earlier would raise a NameError.
 
 ### TASK-5: Category and region breakdowns
 - [x] Bar chart shows sales by category, sorted highest to lowest, all categories shown
