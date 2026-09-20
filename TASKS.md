@@ -12,12 +12,6 @@ A milestone can move to Done only when:
 
 ## To Do
 
-### TASK-2: Data loading and basic structure
-- [ ] sales-data.csv loads into a Pandas DataFrame with correct dtypes (date, numeric, categorical)
-- [ ] Basic page layout/title in place
-
-Commit:
-
 ### TASK-3: KPI cards implementation
 - [ ] Total Sales displayed, formatted as currency ($X,XXX,XXX)
 - [ ] Total Orders displayed, formatted with number separators
@@ -54,6 +48,14 @@ Commit:
 ## In Progress
 
 ## Done
+
+### TASK-2: Data loading and basic structure
+- [x] sales-data.csv loads into a Pandas DataFrame with correct dtypes (date, numeric, categorical)
+- [x] Basic page layout/title in place
+
+Commit: 1ec95db
+
+Notes: The plan's `pytest tests/test_data.py -v` command failed with `ModuleNotFoundError: No module named 'data'` even after `data.py` existed, because the bare `pytest` entry point doesn't add the project root to `sys.path` when `tests/` has no `__init__.py`. Used `python -m pytest` instead, which does add the cwd to `sys.path`. This will apply to TASK-3 through TASK-6 as well.
 
 ### TASK-1: Environment setup and project initialization
 - [x] Project structure created (app.py, requirements.txt, data/ folder)
