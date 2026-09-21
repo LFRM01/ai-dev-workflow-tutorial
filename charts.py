@@ -8,7 +8,7 @@ def trend_line_chart(monthly_series):
         labels={"x": "Month", "y": "Total Sales ($)"},
         title="Sales Trend Over Time",
     )
-    fig.update_traces(mode="lines+markers", hovertemplate="%{x|%B %Y}: $%{y:,.2f}")
+    fig.update_traces(mode="lines+markers", hovertemplate="%{x|%B %Y}: $%{y:,.2f}<extra></extra>")
     return fig
 
 
@@ -19,7 +19,7 @@ def category_bar_chart(category_series):
         labels={"x": "Category", "y": "Total Sales ($)"},
         title="Sales by Category",
     )
-    fig.update_traces(hovertemplate="%{x}: $%{y:,.2f}")
+    fig.update_traces(hovertemplate="%{x}: $%{y:,.2f}<extra></extra>")
     return fig
 
 
@@ -30,5 +30,5 @@ def region_bar_chart(region_series):
         labels={"x": "Region", "y": "Total Sales ($)"},
         title="Sales by Region",
     )
-    fig.update_traces(hovertemplate="%{x}: $%{y:,.2f}")
+    fig.update_traces(hovertemplate="%{x}: $%{y:,.2f}<extra></extra>")
     return fig
