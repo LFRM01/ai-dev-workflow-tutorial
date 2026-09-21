@@ -12,15 +12,19 @@ A milestone can move to Done only when:
 
 ## To Do
 
-### TASK-7: Deployment to Streamlit Community Cloud
-- [ ] App deployed and reachable via a public Streamlit Community Cloud URL
-- [ ] Deployed app matches local behavior (KPIs, charts, no errors)
-
-Commit:
-
 ## In Progress
 
 ## Done
+
+### TASK-7: Deployment to Streamlit Community Cloud
+- [x] App deployed and reachable via a public Streamlit Community Cloud URL
+- [x] Deployed app matches local behavior (KPIs, charts, no errors)
+
+Live URL: https://ai-dev-workflow-tutorial-uqvjz7usqbdhprhyxorlnr.streamlit.app/
+
+Commit: ce67c1e (deployed from `main`; manual step, no separate implementation commit)
+
+Notes: Deployed manually via Streamlit Community Cloud, pointing at `app.py` on `main`, per the plan's handoff note.
 
 ### TASK-6: Testing and refinement
 - [x] Dashboard runs end-to-end with no errors or warnings
